@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            margin-top: auto;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Form Element: Input</h3>
+    <form action="">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+    </form>
+    <hr>
+    <h3>Form Element: Select</h3>
+    <form action="">
+        <label for="cars">Select a car:</label>
+        <select id="cars" name="cars">
+            <option value="GMC">GMC</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Suzuki">Suzuki</option>
+            <option value="Honda">Honda</option>
+        </select>
+    </form>
+    <hr>
+    <h3>Form Element: textarea</h3>
+    <form action="">
+        <textarea name="message" rows="15" cols="50">The cat was playing in the garden.</textarea>
+    </form>
+    <hr>
+    <h3>Form Element: button</h3>
+    <form action="">
+        <button type="button" onclick="alert('Guvi Geek')">Click Me!</button>
+    </form>
+    <hr>
+    <h3>Form Element: fieldset</h3>
+    <form action="">
+        <fieldset>
+          <legend>Employee:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="Ajay"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Maurya"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <hr>
+    <h3>Form Element: datalist</h3>
+    <form action="">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+    </form>
+    <hr>
+    <h3>Form Element: output</h3>
+    <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range"  id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

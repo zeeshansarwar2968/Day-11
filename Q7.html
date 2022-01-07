@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 3</title>
+    <style>
+        h2{
+            text-align: center;
+            background-color: red;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+        section{
+            border: 2px solid rgb(34, 4, 4);
+            /* padding: 10px 1px; */
+            /* margin: 0px; */
+            width: 35%;
+            margin-left: auto;
+            margin-right: auto;
+            /* text-align: center; */
+
+        }
+        .a2{
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Yes! I want to subscribe to Mag-O-Zine</h2>
+        <form action="" method="get" class="a1" >
+            <label for="">First Name:
+            <input type="text" placeholder='Joe' required>
+            </label>
+            <label for="">Last Name:
+            <input type="text" placeholder='Schmeggie' required>
+            </label>
+        </form><br>
+        <!-- <form action="" method="post" class="a1">
+            <label for="">Address:
+            <input type="text"  placeholder='1001 Washington Street' width="70" required>
+            </label></form><br> -->
+        <form action="" method="post" class="a1">
+            <label for="">Address:
+            <textarea rows="1" cols="75" name="comment" form="usrform">1001 Washington Street</textarea>
+            </label></form><br>
+        <form action="" method="get" class="a1" >
+            <label for="">City:
+            <input type="text" placeholder='Austin' required>
+            </label>
+            <label for="">State:
+            <input type="text" placeholder='CA' required>
+            </label>
+            <label for="">Zip:
+            <input type="text" placeholder='99999' required>
+            </label>
+        </form><br>
+        <form action="" method="post" class="a1 a2">
+            <label for="subs">Subscribe for:
+            <input type="radio" name="subs" value="1year" id="subs" checked>1year($19.91)
+            <input type="radio" name="subs" value="2year" id="subs">2years($35.00)
+            </label></form><br>
+        <form action="" method="post" class="a1 a2">
+            Send me more information about: <br>
+            <input type="checkbox" id="info1" name="info1" value="Computer-Zine" checked>
+            <label for="info1"> Computer-Zine</label><br>
+            <input type="checkbox" id="info2" name="info2" value="Fishing-Zine">
+            <label for="info2"> Fishing-Zine</label><br>
+            <input type="checkbox" id="info3" name="info3" value="Cai-O-Zine" checked>
+            <label for="info3"> Cai-O-Zine</label><br>
+        </form>
+        
+        </section>
+</body>
+</html>
